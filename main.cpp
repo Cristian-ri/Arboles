@@ -8,6 +8,7 @@ using std::vector;
 using std::max;  //Es para obtener el maximo  !Investigar!
 #include <algorithm>  //Es una libreria con algoritmo optimos
 
+
 class Node;
 
 class Node {
@@ -89,12 +90,15 @@ int  Height(vector<Node> A){ //Vector de hojas ?
   return altura;
 }
 
-int main(int argc, char** argv) {
-	
-	vector<Node> arbol;
-	arbol = newTree();
-	monstrarArbol(arbol);
-	cout<<" La altura del arbol  es :  "<< Height(arbol)<<endl;
-	
-	return 0;
+int main()
+{
+  vector<Node> arbol;
+  arbol = newTree();
+  monstrarArbol(arbol);
+  cout<<" La altura del arbol  es :  "<< Height(arbol)<<endl;
+  
+  return 0;
 }
+
+//Recomendacion utilizar libreria vector
+//Libreria <algorithm>
